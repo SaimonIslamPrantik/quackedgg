@@ -12,6 +12,7 @@ const slogans = [
   { slogan: "There's Nothing More Painful Than Pirating A Multiplayer Game", sub: "- your avarage fellow pirate" },
   { slogan: "FREE PALESTINE", sub: "- HUMAN" },
   { slogan: "AYE AYE CAPTAIN", sub: "- SpongeBob SquarePants" },
+  { slogan: "You Shouldn't Pirate If You Have A Billion Dollar Lyin' Around", sub: "- fib" },
   { slogan: "Star This Project On Github", sub: "https://github.com/SaimonIslamPrantik/quackedgg" },
 ];
 
@@ -44,6 +45,7 @@ searchInput.addEventListener('keydown', (event) => {
     performSearch();
   }
 });
+
 
 
 
