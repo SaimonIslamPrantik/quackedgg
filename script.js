@@ -12,6 +12,7 @@ const slogans = [
   { slogan: "There's Nothing More Painful Than Pirating A Multiplayer Game", sub: "- your avarage fellow pirate" },
   { slogan: "FREE PALESTINE", sub: "- HUMAN" },
   { slogan: "AYE AYE CAPTAIN", sub: "- SpongeBob SquarePants" },
+  { slogan: "Star This Project On Github", sub: "https://github.com/SaimonIslamPrantik/quackedgg" },
 ];
 
 const randomPick = slogans[Math.floor(Math.random() * slogans.length)];
@@ -43,5 +44,6 @@ searchInput.addEventListener('keydown', (event) => {
     performSearch();
   }
 });
+
 
 
