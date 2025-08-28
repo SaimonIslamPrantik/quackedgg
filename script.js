@@ -14,6 +14,11 @@ const slogans = [
   { slogan: "AYE AYE CAPTAIN", sub: "- SpongeBob SquarePants" },
   { slogan: "You Shouldn't Pirate If You Have A Billion Dollar Lyin' Around", sub: "- fib" },
   { slogan: "Imagine Pirating S*itton Of Books Just To Train AI", sub: "- zark muckerberg" },
+  { slogan: "Imagine Visiting This Website With A Mac", sub: "what a grief" },
+  { slogan: "I Stand With Potato PC Users", sub: "you're the best! 🖐" },
+  { slogan: "ꉂ(˵˃ ᗜ ˂˵)", sub: "- neko chan" },
+  { slogan: "≽^•⩊•^≼", sub: "-  ₍^. .^₎⟆" },
+  { slogan: "𓊝 HAIL THE HIGH SEAS 𓊝", sub: "ㄨ 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 ㄨ" },
   { slogan: "Star This Project On Github", sub: "https://github.com/SaimonIslamPrantik/quackedgg" },
 ];
 
@@ -46,6 +51,7 @@ searchInput.addEventListener('keydown', (event) => {
     performSearch();
   }
 });
+
 
 
 
