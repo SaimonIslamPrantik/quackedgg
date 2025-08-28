@@ -13,6 +13,7 @@ const slogans = [
   { slogan: "FREE PALESTINE", sub: "- HUMAN" },
   { slogan: "AYE AYE CAPTAIN", sub: "- SpongeBob SquarePants" },
   { slogan: "You Shouldn't Pirate If You Have A Billion Dollar Lyin' Around", sub: "- fib" },
+  { slogan: "Imagine Pirating S*itton Of Books Just To Train AI", sub: "- zark muckerberg" },
   { slogan: "Star This Project On Github", sub: "https://github.com/SaimonIslamPrantik/quackedgg" },
 ];
 
@@ -45,6 +46,7 @@ searchInput.addEventListener('keydown', (event) => {
     performSearch();
   }
 });
+
 
 
 
