@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUACKED GG</title>
+  <style>
+    @font-face {
+      font-family: 'Product Sans Bold';
+      src: url('productsansbold.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Glacial Indifference';
+      src: url('glacialindifference.ttf') format('truetype');
+    }
+
+    body {
+      background-color: #121212;
+      color: white;
+      text-align: center;
+      font-family: 'Glacial Indifference', sans-serif;
+    }
+
+    h1 {
+      font-family: 'Product Sans Bold', sans-serif;
+      font-size: 2.5rem;
+      margin-top: 100px;
+    }
+
+    .quote {
+      font-family: 'Glacial Indifference', sans-serif;
+      margin-bottom: 50px;
+    }
+
+    .search-box {
+      display: flex;
+      justify-content: center;
+      margin: 30px auto;
+      width: 50%;
+      max-width: 500px;
+    }
+
+    .search-box input {
+      flex: 1;
+      padding: 15px;
+      border-radius: 25px 0 0 25px;
+      border: none;
+      outline: none;
+      font-family: 'Glacial Indifference', sans-serif;
+      font-size: 1rem;
+    }
+
+    .search-box button {
+      padding: 15px;
+      border: none;
+      border-radius: 0 25px 25px 0;
+      background-color: #3a6eff;
+      color: white;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: 0.3s;
+    }
+
+    .search-box button:disabled {
+      background-color: #555;
+      cursor: not-allowed;
+    }
+
+    .apps {
+      margin-top: 60px;
+    }
+
+    .apps img {
+      margin: 0 20px;
+      width: 50px;
+      height: 50px;
+    }
+
+    .footer-text {
+      margin-top: 15px;
+      font-family: 'Glacial Indifference', sans-serif;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .search-icon {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="slogan"></h1>
+  <div class="quote" id="subtext"></div>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search your Games Here">
+    <button id="searchBtn" disabled>
+      <img src="search.png" alt="Search" class="search-icon">
+    </button>
+  </div>
+
+<div class="apps">
+  <a href="https://www.mozilla.org/firefox/">
+    <img src="firefox.png" alt="Firefox">
+  </a>
+  <a href="https://ublockorigin.com/">
+    <img src="ublock.png" alt="uBlock Origin">
+  </a>
+  <a href="https://www.qbittorrent.org/">
+    <img src="qbittorrent.png" alt="qBittorrent">
+  </a>
+</div>
+
+<style>
+  .apps {
+    margin-top: 60px;
+    display: flex;              /* keeps them in a row */
+    justify-content: center;    /* centers them */
+    align-items: center;        /* aligns nicely */
+  }
+
+  .apps a {
+    text-decoration: none;      /* removes dots/underlines */
+    display: inline-block;      /* keeps anchor clean */
+  }
+
+  .apps img {
+    margin: 0 20px;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .apps img:hover {
+    transform: scale(1.2);
+  }
+</style>
+
+  <div class="footer-text">USE THESE FOR BETTER EXPERIENCE</div>
+
+  <script>
+    const slogans = [
+      { slogan: "I Don't Endorse Piracy But I Don't Condemn It Too", sub: "- zark muckerberg" },
+      { slogan: "F*ck EA Sports", sub: "- elu ma" },
+      { slogan: "Let's Bring The Old Web Back", sub: "- humankind lover" },
+      { slogan: "You're An Autistic If Your Default Browser Is Chrome", sub: "- Nsaac Iewton" },
+      { slogan: "HAIL VALVE", sub: "- Gabe Newell Glorifier" },
+      { slogan: "Pirate If You Are Unable To Buy", sub: "- ein-stain's 69th law" },
+      { slogan: "Never Buy An EA Game", sub: "- your fella" },
+      { slogan: "Good Artists Buy, Great Artists Pirate", sub: "- Pablo Picabo" },
+      { slogan: "Do Me A Favour, Go Buy A Clemon For Yourself :3", sub: " (not sposored by clemon) pls sponsor me uwu" },
+	  { slogan: "Go Buy A Way Out", sub: "(oh you don't have friends) {srry}" },
+	  { slogan: "There's Nothing More Painful Than Pirating A Multiplayer Game", sub: "- your avarage fellow pirate" },
+      { slogan: "FREE PALESTINE", sub: "- HUMAN" },
+	  { slogan: "AYE AYE CAPTAIN", sub: "- SpongeBob SquarePants" },
+    ];
+
+    const randomPick = slogans[Math.floor(Math.random() * slogans.length)];
+    document.getElementById('slogan').innerText = randomPick.slogan;
+    document.getElementById('subtext').innerText = randomPick.sub;
+
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+
+    function performSearch() {
+      const query = encodeURIComponent(searchInput.value.trim());
+      if (query) {
+        window.location.href = `https://cse.google.com/cse?cx=36ac96e5f3aac4939#gsc.tab=0&gsc.q=${query}&gsc.sort=`;
+      }
+    }
+
+    searchInput.addEventListener('input', () => {
+      if (searchInput.value.trim() !== "") {
+        searchBtn.disabled = false;
+      } else {
+        searchBtn.disabled = true;
+      }
+    });
+
+    searchBtn.addEventListener('click', performSearch);
+
+    searchInput.addEventListener('focus', () => {
+      searchInput.placeholder = "";
+    });
+
+    // Enter key triggers search
+    searchInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' && !searchBtn.disabled) {
+        performSearch();
+      }
+    });
+  </script>
+
+</body>
+</html>
