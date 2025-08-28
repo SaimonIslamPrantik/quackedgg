@@ -8,7 +8,7 @@ const slogans = [
   { slogan: "Never Buy An EA Game", sub: "- your fella" },
   { slogan: "Good Artists Buy, Great Artists Pirate", sub: "- Pablo Picabo" },
   { slogan: "Do Me A Favour, Go Buy A Clemon For Yourself :3", sub: " (not sposored by clemon) pls sponsor me uwu" },
-  { slogan: "Go Buy A Way Out", sub: "(oh you don't have friends) {srry}" },
+  { slogan: "Go Buy A Copy Of "A Way Out"", sub: "(oh you don't have friends) {srry}" },
   { slogan: "There's Nothing More Painful Than Pirating A Multiplayer Game", sub: "- your avarage fellow pirate" },
   { slogan: "FREE PALESTINE", sub: "- HUMAN" },
   { slogan: "AYE AYE CAPTAIN", sub: "- SpongeBob SquarePants" },
@@ -43,3 +43,4 @@ searchInput.addEventListener('keydown', (event) => {
     performSearch();
   }
 });
+
