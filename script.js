@@ -20,6 +20,9 @@ const slogans = [
   { slogan: "≽^•⩊•^≼", sub: "-  ₍^. .^₎⟆" },
   { slogan: "𓊝 HAIL THE HIGH SEAS 𓊝", sub: "ㄨ 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 ㄨ" },
   { slogan: "Star This Project On Github", sub: "https://github.com/SaimonIslamPrantik/quackedgg" },
+  { slogan: "Don't Search For GTA VI", sub: "it's not available for PC's yet -_-" },
+  { slogan: "Let's All Love Lain", sub: "♫ and you don't seem to understand... ♫" },
+  { slogan: "♫ CONVERSION, SOFTWARE VERSION -", sub: "7.0 ♫" },
 ];
 
 const randomPick = slogans[Math.floor(Math.random() * slogans.length)];
